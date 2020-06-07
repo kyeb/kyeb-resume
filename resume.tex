@@ -21,59 +21,76 @@
 % operating system or comment the line out to use the default font.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \documentclass[]{deedy-resume-openfont}
+\documentclass[]{deedy-resume-openfont}
 
-    \begin{document}
+\begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Profile
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \namesection{Kye}{Burchard}{kyeb@mit.edu | \href{https://github.com/kyeb}{github.com/kyeb} | (406) 217-6239 | \href{https://kyeburchard.com}{kyeburchard.com}}
+\namesection{Kye}{Burchard}{kyeb@mit.edu | \href{https://github.com/kyeb}{github.com/kyeb} | (406) 217-6239 | \href{https://kyeburchard.com}{kyeburchard.com}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Education
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Education}
 \raggedright
 
-\runsubsection{MIT}\descript{| SB Electrical Engineering and Computer Science}\hfill \location{2017 - 2021}\\
+\newsection{MIT}\descript{| SB Electrical Engineering and Computer Science}\hfill \location{2017 - 2021}\\
 GPA: 4.9\\
 \sectionsep
 
-\runsubsection{Great Falls High School}\descript{| Great Falls, Montana}\hfill \location{2013 - 2017}\\
-GPA: 4.0 \textbar{} Rank: 1/298 \textbar{} ACT: 35 \textbar{} National Merit Scholar\\
-\sectionsep
+% \newsection{Great Falls High School}\descript{| Great Falls, Montana}\hfill \location{2013 - 2017}\\
+% GPA: 4.0 \textbar{} Rank: 1/298 \textbar{} ACT: 35 \textbar{} National Merit Scholar\\
+% \sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Experience
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experience}
-\runsubsection{Stripe}\descript{| Software Engineering Intern}\hfill \location{May - Aug. 2020}
+\newsection{Stripe}\descript{| Software Engineering Intern}\hfill \location{May - Aug. 2020}
 \begin{tightemize}
-	\item Performance engineering on the Dashboard Platform team, building infrastructure to improve performance of the main Stripe dashboard
+	\item Building infrastructure to improve performance of the Stripe dashboard, a massive React/Redux app
 \end{tightemize}
 \sectionsep
-\runsubsection{Microsoft Garage}\descript{| Software Engineering Intern}\hfill \location{May - Aug. 2019}
+
+\newsection{web.lab}\descript{| Operations Chair}\hfill \location{Jan. 2020}
+\begin{tightemize}
+    \item Coordinated logistics, course staff, and delivered 2 lectures for 200 person IAP class
+\end{tightemize}
+\sectionsep
+
+\newsection{Microsoft Garage}\descript{| Software Engineering Intern}\hfill \location{May - Aug. 2019}
 \begin{tightemize}
     \item Designed and implemented a modular, scalable data architecture for an independent intern project
-    \item Initiated and led a reorganization of team's Git workflow
-    \item Facilitated meetings and communication across 4 disparate dev teams to produce a working prototype
+    % \item Initiated and led a reorganization of team's Git workflow
+    \item Facilitated communication across 4 disparate dev teams to produce a working prototype
 \end{tightemize}
 \sectionsep
-\runsubsection{MIT Media Lab}\descript{| Undergraduate Researcher}\hfill \location{May - Aug. 2018}
+
+\newsection{MIT Media Lab}\descript{| Undergraduate Researcher}\hfill \location{May - Aug. 2018}
 \begin{tightemize}
-	\item Designed an algorithm to improve accuracy of location detection for Rhythm Badges project
-	\item Developed a full data processing pipeline, from raw output to analyzable dataframes, leveraging multi-core processing for efficiency
+	\item Designed algorithm and data pipeline to improve location detection for Rhythm Badges project
+	% \item Developed a full data processing pipeline, from raw output to analyzable dataframes, leveraging multi-core processing for efficiency
 \end{tightemize}
 \sectionsep
-\runsubsection{HackMIT}\descript{| Logistics Head 2019, Dev \& Corporate Relations 2018}\hfill \location{April 2018 – Sept. 2019}
+
+\newsection{HackMIT}\descript{| Logistics Head 2019, Dev \& Corporate Relations 2018}\hfill \location{April 2018 – Sept. 2019}
 \begin{tightemize}
     \item Heading up a 12-person logistics team to plan and execute MIT's largest hackathon 
     \item Designed layouts, schedules, and staffing for a 1,200-person event over 3 days
 \end{tightemize}
 \sectionsep
-\runsubsection{Maseeh Hall}\descript{| President 2019, Treasurer 2018, WebTech Chair}\hfill \location{Jan. 2018 – Present}
+
+\newsection{Maseeh Hall}\descript{| President 2019, Treasurer 2018, WebTech Chair 2018-2020}\hfill \location{Jan. 2018 – May 2020}
 \begin{tightemize}
-    \item Served as primary interface between the largest dorm on campus and administration
-    \item Led Maseeh Hall in reviving various clubs and committees, resulting in a 20\% improvement in retention
+    \item Led largest dorm at MIT in reviving clubs and committees, resulting in a 20\% improvement in retention
+\end{tightemize}
+\sectionsep
+
+\newsection{Other}\descript{}\hfill \location{}
+\begin{tightemize}
+    \item \custombold{CLICK} Startup focusing on empowering influencers to be more productive
+    \item \custombold{SIPB} Contributing member to MIT's volunteer student computing group
+    \item \custombold{6.08} Lab assistant for Intro to EECS via Interconnected Embedded Systems
 \end{tightemize}
 \sectionsep
 
@@ -83,32 +100,32 @@ GPA: 4.0 \textbar{} Rank: 1/298 \textbar{} ACT: 35 \textbar{} National Merit Sch
 \section{Projects}
 \raggedright
 
-\runsubsection{\large{StreetSmarts}}
-\descript{| C++, Python, SQL}\hfill
-\location{\href{https://lrylander.github.io/StreetSmarts}{lrylander.github.io/StreetSmarts}}\\
-A smart street lamp system for emergency responders, leveraging real-time optimal routing, cloud-based synchronization, and voice activation. Final project for 6.08\\
+\newsection{\large{Politichat}}
+\descript{| React, Express, socket.io, Jitsi}\hfill \location{\href{https://politi.chat}{politi.chat}}\\
+Startup helping campaigns in the age of COVID-19 with a replacement for 1-on-1 conversations with candidates.
+\newline
+Project for CS91r at Harvard and part of the HCS Builders Incubation Program during summer 2020.
 \sectionsep
 
-\runsubsection{\large{HackMIT/Blueprint Homepages}}
-\descript{| HTML, CSS/Sass}\hfill \location{\href{https://hackmit.org/2018}{hackmit.org}, \href{https://blueprint.hackmit.org}{blueprint.hackmit.org}}\\
-Self-taught HTML/CSS to contribute to the development of the HackMIT 2018 and
-Blueprint 2019 splash pages, the landing site for MIT\textquotesingle{}s largest
-hackathon and high school learnathon/hackathon\\
+\newsection{\large{StreetSmarts}}
+\descript{| C++, Python, SQL}\hfill
+\location{\href{https://lrylander.github.io/StreetSmarts}{lrylander.github.io/StreetSmarts}}\\
+A smart street lamp system for emergency responders, leveraging real-time optimal routing and cloud-based synchronization. Final project for 6.08\\
 \sectionsep
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Coursework
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Coursework}
 \begin{tabular}{ l l }
 
-\runsubsection{\large{Spring 2020}} & 6.858 Computer Systems Security, 6.141 Robotics, 18.05 Probability \& Statistics \\
+\newsection{\large{Spring 2020}} & 6.858 Computer Security, 18.05 Probability \& Statistics, CS91r Political Tech (Harvard) \\
 
-\runsubsection{\large{Fall 2019}} &6.172 Performance Engineering, 6.034 Artificial Intellligence, 18.06 Linear Algebra \\
+\newsection{\large{Fall 2019}} &6.172 Performance Engineering, 6.034 Artificial Intellligence, 18.06 Linear Algebra \\
 
-\runsubsection{\large{Spring 2019}} &6.033 Computer Systems Engineering, 6.002 Circuits, 6.036 Machine Learning\\
+\newsection{\large{Spring 2019}} &6.033 Computer Systems Engineering, 6.002 Circuits, 6.036 Machine Learning\\
 
-% 2018 coursework is now less relevant
-% \runsubsection{\large{Fall 2018}} &6.004 Computation Structures, 6.08 Intro to Embedded Systems, 6.006 Intro to Algorithms \\
+% \newsection{\large{Fall 2018}} &6.004 Computation Structures, 6.08 Intro to Embedded Systems, 6.006 Intro to Algorithms \\
 
 \end{tabular}
 
@@ -120,10 +137,9 @@ hackathon and high school learnathon/hackathon\\
 \section{Skills}
 \raggedright
 \begin{tabular}{ l l }
-	\descript{Advanced}      & {\location{Python, Linux}} \\
-	\descript{Knowledgeable} & {\location{HTML/CSS, Javascript/TypeScript, React, C/C++, Git, \LaTeX, C\#, Vim}} \\
-	\descript{Exploring}     & {\location{Rust, Bash, Redux}} \\
+	\descript{Advanced}      & {\location{Python, Linux, JavaScript, C}} \\
+	\descript{Knowledgeable} & {\location{React, Typescript, HTML/CSS, C++, Git, \LaTeX, C\#, Vim}} \\
+	\descript{Exploring}     & {\location{Ruby, Rust, Bash, Redux}} \\
 \end{tabular}
 \sectionsep
 \end{document}
-

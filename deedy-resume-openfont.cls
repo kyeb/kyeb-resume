@@ -29,7 +29,7 @@
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Color=primary, Path = fonts/raleway/]{Raleway-Light}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
-\newcommand{\custombold}[1]{\color{subheadings}\fontspec[Path = fonts/raleway/]{Raleway-Regular}\selectfont #1 \normalfont}
+\newcommand{\custombold}[1]{\color{subheadings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\selectfont #1 \normalfont}
 
 % Date command
 \setlength{\TPHorizModule}{1mm}
@@ -69,9 +69,9 @@ Last Updated on
 
 \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
 \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
-\newcommand{\runsubsection}[1]{\color{subheadings}
+\newcommand{\newsection}[1]{\color{subheadings}
 \fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{12pt}{12pt}\selectfont\bfseries
-% \uppercase 
+% \uppercase
 {#1} \normalfont}
 
 % Descriptors command
