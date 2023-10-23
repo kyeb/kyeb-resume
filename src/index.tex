@@ -1,30 +1,3 @@
-%!TEX TS-program = xelatex
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% This is a modified ONE COLUMN version of
-% the following template:
-%
-% Deedy - One Page Two Column Resume
-% LaTeX Template
-% Version 1.1 (30/4/2014)
-%
-% Original author:
-% Debarghya Das (http://debarghyadas.com)
-%
-% Original repository:
-% https://github.com/deedydas/Deedy-Resume
-%
-% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
-%
-% This template uses several fonts not included with Windows/Linux by
-% default. If you get compilation errors saying a font is missing, find the line
-% on which the font is used and either change it to a font included with your
-% operating system or comment the line out to use the default font.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[]{deedy-resume-openfont}
-
-\begin{document}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Profile
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -36,7 +9,7 @@
 \raggedright
 
 \newsection{MIT}\descript{| SB Electrical Engineering and Computer Science}\hfill \location{2017 - 2021}\\
-GPA: 4.9\\
+GPA: 5.0\\
 \sectionsep
 
 % \newsection{Great Falls High School}\descript{| Great Falls, Montana}\hfill \location{2013 - 2017}\\
@@ -100,17 +73,15 @@ GPA: 4.9\\
 \section{Projects}
 \raggedright
 
+\newsection{\large{Overcooked FPGA}}
+\descript{| SystemVerilog, C++, Python}\hfill \location{\href{https://github.com/kyeb/overcooked-fpga}{github.com/kyeb/overcooked-fpga}}\\
+An online-multiplayer implementation of the game \emph{Overcooked}, implemented entirely in hardware. Designed \& implemented protocol to synchronize game state between FPGAs over the internet in real time.
+\newline
+
 \newsection{\large{Politichat}}
 \descript{| React, Express, socket.io, Jitsi}\hfill \location{\href{https://politi.chat}{politi.chat}}\\
-Startup helping campaigns in the age of COVID-19 with a replacement for 1-on-1 conversations with candidates.
-\newline
-Project for CS91r at Harvard and part of the HCS Builders Incubation Program during summer 2020.
-\sectionsep
+Startup helping campaigns in the age of COVID-19 with a replacement for 1-on-1 conversations with candidates. Project for CS91r at Harvard.
 
-\newsection{\large{StreetSmarts}}
-\descript{| C++, Python, SQL}\hfill
-\location{\href{https://lrylander.github.io/StreetSmarts}{lrylander.github.io/StreetSmarts}}\\
-A smart street lamp system for emergency responders, leveraging real-time optimal routing and cloud-based synchronization. Final project for 6.08\\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -118,6 +89,8 @@ A smart street lamp system for emergency responders, leveraging real-time optima
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Coursework}
 \begin{tabular}{ l l }
+
+\newsection{\large{Fall 2020}} & 6.111 Digital Systems Lab, 6.837 Graphics, 6.S081 Operating Systems, 6.S079 Quantum Circuits  \\
 
 \newsection{\large{Spring 2020}} & 6.858 Computer Security, 18.05 Probability \& Statistics, CS91r Political Tech (Harvard) \\
 
@@ -143,3 +116,4 @@ A smart street lamp system for emergency responders, leveraging real-time optima
 \end{tabular}
 \sectionsep
 \end{document}
+

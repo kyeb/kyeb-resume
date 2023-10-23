@@ -6,7 +6,13 @@ CV later.
 
 ## Setup
 
-Currently, I'm using the beta [Tectonic](https://tectonic-typesetting.github.io/en-US/index.html) to build this.
+Currently, I'm using the beta [Tectonic](https://tectonic-typesetting.github.io/en-US/index.html) to build this. Just install tectonic and run:
+
+```
+tectonic -X watch
+```
+
+in the root directory of this repository, and it automatically compiles to `build/resume/kyeb_resume.pdf` and rebuilds on any changes!
 
 ---
 
